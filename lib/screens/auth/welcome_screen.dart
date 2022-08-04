@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:groceries_app/screens/login_screen.dart';
+import 'package:groceries_app/screens/auth/login_screen.dart';
 import 'package:groceries_app/ui/buttons/rounded_button.dart';
 
 class WelcomeScreen extends StatefulWidget {

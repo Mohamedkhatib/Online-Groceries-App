@@ -1,6 +1,7 @@
 import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:groceries_app/core/theme.dart';
+import 'package:groceries_app/screens/home/home_screen.dart';
 import 'package:groceries_app/ui/buttons/rounded_svg_button.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -58,7 +59,11 @@ class _LoginScreenState extends State<LoginScreen> {
               style: TextStyle(color: Colors.black38)),
           const SizedBox(height: 32),
           RoundedSvgButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).push(MaterialPageRoute(builder: (c){
+                return HomeScreen();
+              }));
+            },
             svgPath: 'assets/icons/google.svg',
             background: Colors.blue[700],
             title: 'Continue with Google',
